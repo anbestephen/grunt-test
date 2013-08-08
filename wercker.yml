@@ -6,6 +6,9 @@ build:
     # A step that executes `npm install` command
     - bundle-install
     - npm-install
+    - script:
+        name: run bower install
+        code: bower install
     # A step that executes `npm test` command
     #- npm-test
     - grunt:
